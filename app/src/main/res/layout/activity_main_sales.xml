@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainSales">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:title="Shop Name"
+            app:titleTextColor="@color/white">
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Total Sale"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/totalsale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+                    </TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Amount"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/totalamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center">
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/placeholder_bg">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="5">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sales man"
+                            android:padding="5dp"
+                            android:visibility="visible"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18dp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/salemanid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="7729958790"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:textSize="18dp">
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mobies"
+                                android:padding="5dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="18dp">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/mcount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:visibility="gone"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:textSize="18dp">
+
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Accessories"
+                                android:singleLine="true"
+                                android:padding="5dp"
+
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="18dp">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/acount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:padding="5dp"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:textSize="18dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    app:duration="800">
+
+                    <!-- Adding 3 rows of placeholders -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/placeholder" />
+
+                        <include layout="@layout/placeholder" />
+
+                        <include layout="@layout/placeholder" />
+
+
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/salesdcycle"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/sales"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:text="Add memeber"
+        android:textColor="@color/white"
+        android:background="@drawable/button_style"
+        android:layout_height="50dp">
+
+    </Button>
+    <Button
+        android:id="@+id/accessories"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:text="add Sales"
+        android:textColor="@color/white"
+        android:background="@drawable/button_style"
+        android:layout_height="50dp">
+
+    </Button>
+</LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

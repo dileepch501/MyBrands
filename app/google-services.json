@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "641867104603",
+    "firebase_url": "https://sirhow-4eda1.firebaseio.com",
+    "project_id": "sirhow-4eda1",
+    "storage_bucket": "sirhow-4eda1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641867104603:android:6a9be5f14a781352",
+        "android_client_info": {
+          "package_name": "com.dileep.org.myworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641867104603-k84n599iq73ip3g4vq3mm202kgcefrs6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dileep.org.myworld",
+            "certificate_hash": "ca0b2de537c8dd3c9f8f26793ff4dc9574490c90"
+          }
+        },
+        {
+          "client_id": "641867104603-96saiscbmo34ips93iavuhopmeil2ph2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAjkUvmz8BySnYyxfSy5_BxhN6Uih1iLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641867104603-96saiscbmo34ips93iavuhopmeil2ph2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".LogingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:text="Enter Mobile Number"
+            android:textStyle="bold"
+            android:padding="5dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/logindil"
+            android:gravity="center">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phonnuber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="  +91  Mobile number"
+            android:background="@drawable/edit_back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:inputType="number"
+            android:padding="5dp"
+            android:paddingStart="8dp"
+
+            android:drawableLeft="@drawable/regphone"
+            android:drawableStart="@drawable/regphone">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+          android:layout_margin="10dp"
+            android:background="@drawable/button_style"
+            android:text="get verification code"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
